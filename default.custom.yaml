@@ -1,6 +1,6 @@
 patch:
   menu:
-    page_size: 6
+    page_size: 8
   schema_list:
   - schema: luna_pinyin_simp      # 朙月拼音 简化字
 #  - schema: luna_pinyin          # 朙月拼音
@@ -9,6 +9,27 @@ patch:
   - schema: double_pinyin_flypy   # 小鹤雙拼
   - schema: wubi_pinyin           # 五笔拼音混合輸入
 
+  ascii_composer:           # 看来这行要放在文件头,才不会出错
+    good_old_caps_lock: true # caps lock 键切换英文并输出小写
+    switch_key:
+      Caps_Lock: noop
+      Shift_L: commit_code  # 切换为英文，并把输入的字符放在输入框（不转为中文）
+      Shift_R: commit_text  # commit_text(把文本放在输入区), inline_ascii(显示在界面中)
+      Control_L: noop
+      Control_R: noop
+      # 如果要把Caps Lock 设为只改变字母的大小写而不做中西文切换，可将 Caps_Lock 对应的切换方式设为 noop
+      # 如果要以Caps Lock 切换到西文模式，默认输出小写字母，请置 ascii_composer/good_old_caps_lock: false
+      # 如果要以Caps Lock 切换到西文模式，默认输出大写字母，请置 ascii_composer/good_old_caps_lock: true
+      # inline_ascii ：在输入法的临时西文编辑区内输入字母、数字、符号、空格等，回车上屏后自动复位到中文。
+      # commit_text ：已输入的候选文字上屏并切换至西文输入模式。
+      # commit_code ：已输入的编码字符上屏并切换至西文输入模式。
+      # noop ：屏蔽该切换键。
+
+  switcher:
+    hotkeys:
+    - F4
+    # - Control+grave     # 只开启ctrl+ Tab上面那个键 `
+    caption: 选择哪个方案呢
 
 #  ascii_composer/good_old_caps_lock: false # capslock 键切换英文并输出小写
 #  ascii_composer/switch_key:

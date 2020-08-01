@@ -21,20 +21,37 @@
 What the fuck!	wtf	1
 WTF	wtf	3
 星際我爭霸	starcraft
-HorizonZeroDawn	hzd	4
-地平线：黎明时分	hzd	2
 正在開會，一會給你回復：）	meet
 中州韻輸入法引擎	rime	2
 又双叒叕	yyy
+A 股	agu	100
+AA 制	aa	100
+B 超	bchao	100
+B 股	bgu	100
+C 盤	cpan	100
+D 盤	dpan	100
 http://rime.im/	rime	1
 Rime	rime	3
 ⌘	cmd
 ⌃	ctl
 ⌥	opt
 ⇧	shift
+scomper	scomper
+yantze@126.com	email
 GBK	gbk
 UTF-8	utfba
-scomper@gmail.com	smail
-scomper	scomper
-macOS High Sierra	macoshs
+What the fuck!	wtf	1
+WTF	wtf	3
+Vue	vue	1
+dict 	dict	1
+trs 	trs	1
+yantze@126.com	yantze	1
+yantze@126.com	yan	1
+ivastiny@gmail.com	iv	1
+有	you	1
+但	dan	1
+BrowserWindow	browserwindow	1
+VSCode	vscode	1
+
+
 
