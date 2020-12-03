@@ -64,3 +64,7 @@ optimized_mode_switch:
     - { when: always, accept: Control+period, toggle: ascii_punct }
     - { when: always, accept: Control+slash, toggle: simplification }
     - { when: always, accept: Control+backslash, toggle: extended_charset }
+
+optimized_mode_vim:
+  __append:
+    - { when: always, accept: Escape, toggle: ascii_mode }

@@ -10,6 +10,9 @@ echo $CURRENT_SCRIPT_HOME
 TARGET_HOME=~/Library/Rime
 # /Library/Input Methods/Squirrel.app
 
+# 初始化目录
+mkdir $TARGET_HOME
+
 set -x # set debug what command do, same set -o xtrace
 
 # 链接系统文件

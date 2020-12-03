@@ -63,4 +63,19 @@ patch:
       hilited_candidate_label_color: 0xffffff   # 第一候选项编号颜色
       comment_text_color: 0xdedddd              # 拼音等提示文字颜色
 
-  "app_options/com.runningwithcrayons.Alfred-3/ascii_mode": true
+  app_options:
+    com.microsoft.VSCode:
+      ascii_mode: true
+      vim_mode: true
+    com.apple.Terminal:
+      ascii_mode: true
+      no_inline: true
+      vim_mode: true
+    com.googlecode.iterm2:
+      ascii_mode: true
+      no_inline: true
+      vim_mode: true
+    org.vim.MacVim:
+      ascii_mode: true
+      no_inline: true
+      vim_mode: true

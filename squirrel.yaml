@@ -1,5 +1,6 @@
 # Squirrel settings
 # encoding: utf-8
+# 这个文件是默认文件，如果是放在 ~/Library/Rime 会自动被删除
 
 config_version: "0.30"
 
