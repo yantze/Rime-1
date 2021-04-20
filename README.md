@@ -81,7 +81,7 @@ https://placeless.net/blog/my-rime-squirrel-config
 </dict>
 ```
 - 重启
-注意：在squirrel.custom.yaml内搭配好需要开启ascii_mode的应用程序，避免在密码输入框等场景下，中文状态不好上屏，西文状态又是大写的尴尬，尤其是对于跟我一样喜欢改 Shift 而用 CapsLock 键切状态的用户，可参考上文 2.2 和 2.5 章节的内容。
+注意：在squirrel.custom.yaml内搭配好需要开启ascii_mode的应用程序，避免在密码输入框等场景下，中文状态不好上屏，西文状态又是大写的尴尬，尤其是对于跟我一样喜欢改 Shift 而用 CapsLock 键切状态的用户。
 
 ## Remind
 - 关于 ESC 自动切换为英文的方法 https://github.com/rime/squirrel/issues/124
