@@ -52,6 +52,4 @@ ivastiny@gmail.com	iv	1
 但	dan	1
 BrowserWindow	browserwindow	1
 VSCode	vscode	1
-
-
-
+o2	o	1
