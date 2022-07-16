@@ -1,7 +1,9 @@
 # Rime Config
 
 ----
+
 添加输入方案 [/plum/](https://github.com/rime/plum)
+
 ## Shortcut
 <kbd>Control+Option+`</kbd> 同步配置到当前软件
 <kbd>Control+`</kbd>
@@ -29,7 +31,7 @@ Init self config
 ./init_mac.sh
 ```
 
-## Sync
+## 同步配置和用户数据
 编辑 `installation.yaml` 主要是 installation_id 是 同步的目录名称
 点击 Sync user data，可以让配置自动同步到这个目录
 
@@ -48,12 +50,8 @@ Init self config
 
 去掉 ipa，因爲直接誒輸入 /a /b 這種就可以直接輸入音標了
 
-
-## 官方教程
+### 官方教程
 https://github.com/rime/home/wiki/CustomizationGuide
-
-## 开启英文联想
-- http://tieba.baidu.com/p/5127922981?traceid=
 
 ## 黑魔法
 https://placeless.net/blog/my-rime-squirrel-config
@@ -80,8 +78,15 @@ https://placeless.net/blog/my-rime-squirrel-config
     <string>US Extended</string>
 </dict>
 ```
-- 重启
+
+## 事项
+
+### 默认英文
+- 关于 ESC 自动切换为英文的方法 https://github.com/rime/squirrel/issues/124
+
+### 每次启动输入法
 注意：在squirrel.custom.yaml内搭配好需要开启ascii_mode的应用程序，避免在密码输入框等场景下，中文状态不好上屏，西文状态又是大写的尴尬，尤其是对于跟我一样喜欢改 Shift 而用 CapsLock 键切状态的用户。
 
-## Remind
-- 关于 ESC 自动切换为英文的方法 https://github.com/rime/squirrel/issues/124
+### 开启英文联想
+- http://tieba.baidu.com/p/5127922981?traceid=
+
