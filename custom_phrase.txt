@@ -24,13 +24,6 @@ WTF	wtf	3
 正在開會，一會給你回復：）	meet
 中州韻輸入法引擎	rime	2
 又双叒叕	yyy
-A 股	agu	100
-AA 制	aa	100
-B 超	bchao	100
-B 股	bgu	100
-C 盤	cpan	100
-D 盤	dpan	100
-http://rime.im/	rime	1
 Rime	rime	3
 ⌘	cmd
 ⌃	ctl
@@ -52,5 +45,7 @@ ivastiny@gmail.com	iv	1
 但	dan	1
 BrowserWindow	browserwindow	1
 VSCode	vscode	1
-o2	o	1
+O2 Space	o	2
+O2 Code	o	1
 git	git	1
+

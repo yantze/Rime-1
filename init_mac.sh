@@ -20,6 +20,7 @@ for file in `ls       \
   opencc              \
   user.yaml           \
   installation.yaml   \
+  default.yaml        \
   default.custom.yaml \
   squirrel.custom.yaml\
   custom_phrase.txt   \
