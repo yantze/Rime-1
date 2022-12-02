@@ -2,45 +2,15 @@
 
 ----
 
-添加输入方案 [/plum/](https://github.com/rime/plum)
-
-## Shortcut
-<kbd>Control+Option+`</kbd> 同步配置到当前软件
-<kbd>Control+`</kbd>
-<kbd>`shift+fn+delete`</kbd> 词频调整:可以删除记忆错误的
-
 ## Install
-Backup your default config: ~/Library/Rime
+macOS Rime 配置地址: ~/Library/Rime
 
+1. 使用 https://github.com/rime/plum 安装词库和新配置
 
-Delete default data
-```
-rm user.yaml
-rm emoji.schema.yaml
-rm emoji.userdb.txt
-squirrel.custom.yaml
-```
-
-Delete luna_pinyin
-```
-rm -rf ./luna_pinyin*
-```
-
-Init self config
+2. Init self config
 ```
 ./init_mac.sh
 ```
-
-## 同步配置和用户数据
-编辑 `installation.yaml` 主要是 installation_id 是 同步的目录名称
-点击 Sync user data，可以让配置自动同步到这个目录
-
-目前使用的是，RimeSync/mac 软链到 系统的配置，通过 init_mac.sh 自动实现了
-然后同步用户数据，rime 会自动把软链替换为实体文件，所以不能让 rime 同步到 RimeSync/mac ,而应该用另外一个文件夹
-然后同步后，自行把内容替换到 RimeSync/mac 中,然后查看 git 的变化内容
-
-所以上面的方法太麻烦，直接在 installation_id 设置好目录，自动同步到本目录，然后同步后，用 git 查看有什么相同的地方
-其实这样想就比较清楚了，如果在 /Users/yantze/Library/Rime/installation.yaml 添加了同步路径参数，应该在 installation_id 一致的时候，自动同步 sync_dir 的内容
 
 ## 简要说明
 - essay 是八股文词典，应该是直接内部调用的
@@ -52,6 +22,18 @@ Init self config
 
 ### 官方教程
 https://github.com/rime/home/wiki/CustomizationGuide
+
+
+## 同步配置和用户数据
+编辑 `installation.yaml` 主要是 installation_id 是 同步的目录名称
+点击 Sync user data，可以让配置自动同步到这个目录
+
+目前使用的是，RimeSync/mac 软链到 系统的配置，通过 init_mac.sh 自动实现了
+然后同步用户数据，rime 会自动把软链替换为实体文件，所以不能让 rime 同步到 RimeSync/mac ,而应该用另外一个文件夹
+然后同步后，自行把内容替换到 RimeSync/mac 中,然后查看 git 的变化内容
+
+所以上面的方法太麻烦，直接在 installation_id 设置好目录，自动同步到本目录，然后同步后，用 git 查看有什么相同的地方
+其实这样想就比较清楚了，如果在 /Users/yantze/Library/Rime/installation.yaml 添加了同步路径参数，应该在 installation_id 一致的时候，自动同步 sync_dir 的内容
 
 ## 黑魔法
 https://placeless.net/blog/my-rime-squirrel-config
@@ -80,6 +62,11 @@ https://placeless.net/blog/my-rime-squirrel-config
 ```
 
 ## 事项
+
+## Shortcut
+<kbd>Control+Option+`</kbd> 同步配置到当前软件
+<kbd>Control+`</kbd>
+<kbd>`shift+fn+delete`</kbd> 词频调整:可以删除记忆错误的
 
 ### 默认英文
 - 关于 ESC 自动切换为英文的方法 https://github.com/rime/squirrel/issues/124
