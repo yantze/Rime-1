@@ -28,6 +28,8 @@ for file in `ls       \
   punctuation.yaml    \
   symbols.yaml        \
   essay.txt           \
+  rime.lua            \
+  lua                 \
   `; do
   # \rm -f "$TARGET_HOME/$file"
   ln -sf "$CURRENT_SCRIPT_HOME/$file" "$TARGET_HOME"

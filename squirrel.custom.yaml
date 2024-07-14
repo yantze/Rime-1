@@ -79,3 +79,7 @@ patch:
       ascii_mode: true
       no_inline: true
       vim_mode: true
+    com.jetbrains.intellij:
+      ascii_mode: true
+      no_inline: true
+      vim_mode: true

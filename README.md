@@ -35,31 +35,12 @@ https://github.com/rime/home/wiki/CustomizationGuide
 所以上面的方法太麻烦，直接在 installation_id 设置好目录，自动同步到本目录，然后同步后，用 git 查看有什么相同的地方
 其实这样想就比较清楚了，如果在 /Users/yantze/Library/Rime/installation.yaml 添加了同步路径参数，应该在 installation_id 一致的时候，自动同步 sync_dir 的内容
 
-## 黑魔法
-https://placeless.net/blog/my-rime-squirrel-config
+## 黑魔法 - 只保留一个输入法
+https://vastiny.com/post/omo7cs3h0mm3g3ct.html
 
-在 macOS 10.9 以前，是可以去掉系统默认输入法，只保留一个常用的，比如「鼠须管」，中英文一个键切换。方法就是额外勾选一个比如「越南输入法」，这时候，美式英语的可删除状态就不再是不可点击的灰色，而是可以直接删除的黑色。
-
-但是这个方法在之后的 macOS 不再可用了，后来在一个远古国外 BBS 上发现一个古老的方法，一直适用到现在，就是稍微有一点麻烦，需要需改系统文件，弄得不好，可能会有些小 bug。
-
-一共五个步骤：
-
-- 备份 ~/Library/Preferences/com.apple.HIToolbox.plist
-- 将当前活跃输入法选为「英文」输入法
-- 终端运行plutil -convert xml1 ~/Library/Preferences/com.apple.HIToolbox.plist
-- 用 vim、sublime text 或者其他编辑器，打开com.apple.HIToolbox.plist，删除掉AppleEnabledInputSources键下不需要的输入法dict
-- 主要是删掉：com.apple.inputmethod.SCIM.ITABC
-- 还有下面这个:
-```
-<dict>
-    <key>InputSourceKind</key>
-    <string>Keyboard Layout</string>
-    <key>KeyboardLayout ID</key>
-    <integer>-2</integer>
-    <key>KeyboardLayout Name</key>
-    <string>US Extended</string>
-</dict>
-```
+## Rime 支持快速输入日期
+https://github.com/rime/weasel/issues/63
+https://github.com/hchunhui/librime-lua/wiki
 
 ## 事项
 
@@ -76,4 +57,7 @@ https://placeless.net/blog/my-rime-squirrel-config
 
 ### 开启英文联想
 - http://tieba.baidu.com/p/5127922981?traceid=
+
+### 查看日志
+在系统的临时文件目录，需要单独找一下，比如 Node.js 的 os.tmpdir()
 
